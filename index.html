@@ -21,7 +21,6 @@
             <div class="upperMenu">
                 <div class="orderInfo">
                     <div class="left">
-
                       <div class="summary">
                       <h3 class="summaryHeader">YOUR ORDER</h3>
                           <table class="wideTable">
@@ -36,21 +35,48 @@
                               <td><b>2</b> documents</td>
                               <td><b>2</b> languages</td>
                               <td>$ <b>696.06</b></td>
-                              <td><b>48</b> documents</td>
+                              <td><b>48</b> documents*</td>
                             </tr>
                           </tbody>
                           </table>
                       </div>
                     </div>
                     <div class="right">
-                          <button>PLACE ORDER</button>
-                          <button>PRINT A QUOTE</button>
+                          <button class="upperMenuButton order">PLACE ORDER</button>
+                          <button class="upperMenuButton">PRINT A QUOTE</button>
                     </div>
                 </div>
                 <div class="helpBlock">
-
+                  <div class="textHelp">
+                      <h3 class="summaryHeader">HELP CENTER</h3>
+                      <p class="paraHelp">If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.</P>
+                      <div class="contacts">
+                        <a href="#">+971 (0) 555 555</a>
+                        <a href="#">help@qtest.com</a>
+                      </div>
+                    </div>
                 </div>
             </div>
+            <section class="documentTake">
+                <h3 class="selectionText">SELECT WHAT YOU WANT TO TRANSLATE</h3>
+                <div class="radioInput">
+                  <input type="radio" id="website" name="translate" value="website" class="input">
+                  <label for="website" class="radioBox"><span class="checked"></span><img src="../img/website-icon.png" ><p><b>Website</b></p></label>
+                  <input type="radio" id="document" name="translate" value="document" class="input" checked>
+                  <label for="document" class="radioBox"><span class="checked"></span><img src="../img/documents-icon.png" ><p><b>Documents</b></p></label>
+                  <input type="radio" id="social" name="translate" value="social" class="input">
+                  <label for="social" class="radioBox"><span class="checked"></span><img src="../img/social-icon.png" ><p><b>Social Account</b></p></label>
+                </div>
+            </section>
+            <section class="documentUpload">
+            <div class="allTextDocumentUpload">
+              <span class="numberSection"><b>1</b></span>
+              <h2 class="uploadText">Upload your documents</h2>
+              <h5 class="smallUploadText">(Doc, Docx, Text, PDF, Markdown)</h5>
+            </div>
+              <input type="file" id="file" name="file" value="files" class="inputHideFile"  >
+              <label for="file" class="uploadFile"><span class="inputFileText"><b>Upload your files</b></span></input></label>
+            </section>
           </form>
         </div>
       </main>
