@@ -142,6 +142,7 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 30%;
   height: 100%;
 }
@@ -308,11 +309,30 @@ form {
    display: flex;
    align-items: center;
    cursor: pointer;
+   transition: 0.4s;
 }
 
 .inputFileText {
+  margin-left: 5px;
 }
 
-.inputFileText::before {
-  background: url("../img/upload-to-cloud-button.svg") no-repeat;
+.upload {
+  background: url(../img/upload-to-cloud-button.svg) no-repeat;
+  background-position: center;
+  background-size: 90%;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.uploadFile:hover {
+  border: 1.5px solid #76a7e1;
+}
+
+.deleteFile {
+  background: url(../img/waste-bin.svg) no-repeat;
+  background-position: center;
+  background-size: 90%;
+  width: 30px;
+  height:  30px;
 }

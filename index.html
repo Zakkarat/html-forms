@@ -61,11 +61,11 @@
                 <h3 class="selectionText">SELECT WHAT YOU WANT TO TRANSLATE</h3>
                 <div class="radioInput">
                   <input type="radio" id="website" name="translate" value="website" class="input">
-                  <label for="website" class="radioBox"><span class="checked"></span><img src="../img/website-icon.png" ><p><b>Website</b></p></label>
+                  <label for="website" class="radioBox"><span class="checked"></span><img src="img/website-icon.png" ><p><b>Website</b></p></label>
                   <input type="radio" id="document" name="translate" value="document" class="input" checked>
-                  <label for="document" class="radioBox"><span class="checked"></span><img src="../img/documents-icon.png" ><p><b>Documents</b></p></label>
+                  <label for="document" class="radioBox"><span class="checked"></span><img src="img/documents-icon.png" ><p><b>Documents</b></p></label>
                   <input type="radio" id="social" name="translate" value="social" class="input">
-                  <label for="social" class="radioBox"><span class="checked"></span><img src="../img/social-icon.png" ><p><b>Social Account</b></p></label>
+                  <label for="social" class="radioBox"><span class="checked"></span><img src="img/social-icon.png" ><p><b>Social Account</b></p></label>
                 </div>
             </section>
             <section class="documentUpload">
@@ -75,7 +75,27 @@
               <h5 class="smallUploadText">(Doc, Docx, Text, PDF, Markdown)</h5>
             </div>
               <input type="file" id="file" name="file" value="files" class="inputHideFile"  >
-              <label for="file" class="uploadFile"><span class="inputFileText"><b>Upload your files</b></span></input></label>
+              <label for="file" class="uploadFile"><span class="upload"></span><span class="inputFileText"><b>Upload your files</b></span></input></label>
+              <table class="wideTable">
+                <tr>
+                  <th>FILE NAME</th>
+                  <th>FILE SIZE</th>
+                  <th>NUMBER OF WORDS</th>
+                  <th>REMOVE</th>
+                </tr>
+                <tr>
+                  <td>buisness_operations.docx</td>
+                  <td>78 kB</td>
+                  <td>3894 words</td>
+                  <td><span class="deleteFile"></span></td>
+                </tr>
+                <tr>
+                  <td>buisness_financial.docx</td>
+                  <td>23 kB</td>
+                  <td>2123 words</td>
+                  <td><img class="deleteFile"></img></td>
+                </tr>
+              </table>
             </section>
           </form>
         </div>
