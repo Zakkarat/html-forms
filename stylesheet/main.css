@@ -267,7 +267,6 @@ form {
 /*                     DOCUMENT UPLOAD                 */
 .documentUpload {
   margin-top: 8%;
-  margin-left: 10%;
   margin-right: 10%;
     color: #6d758f;
 }
@@ -276,22 +275,26 @@ form {
   display: flex;
 }
 .uploadText {
+  margin-top: 20px;
   padding-right: 50px;
+  font-size: 30px;
 }
 .numberSection {
   text-align: center;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   padding: 10px;
   font-size: 18px;
   margin-top: 10px;
   margin-right: 10px;
+  font-size: 30px;
   border: 2px solid gray;
   border-radius: 50%;
+   margin-left: 3.7%;
 }
 
 .smallUploadText {
-  padding-top: 10px;
+  padding-top: 15px;
   color: #b8c2da;
 }
 
@@ -300,9 +303,8 @@ form {
 }
 
 .uploadFile {
-   width: 260px;
-   height: 48px;
-   margin-left: 50px;
+   width: 220px;
+   height: 60px;
    border: 2px solid #c9d0e1;
    box-sizing: border-box;
    border-radius: 5px;
@@ -310,6 +312,7 @@ form {
    align-items: center;
    cursor: pointer;
    transition: 0.4s;
+   margin-left: 10%;
 }
 
 .inputFileText {
@@ -322,7 +325,10 @@ form {
   background-size: 90%;
   width: 30px;
   height: 30px;
-  margin-left: 5px;
+}
+
+.uploadFile {
+  justify-content: center;
 }
 
 .uploadFile:hover {
@@ -330,9 +336,56 @@ form {
 }
 
 .deleteFile {
-  background: url(../img/waste-bin.svg) no-repeat;
-  background-position: center;
-  background-size: 90%;
-  width: 30px;
-  height:  30px;
+  width: 18px;
+  height:  18px;
+  cursor: pointer;
+}
+
+.documentUpload > .wideTable {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 1px solid #d9deea;
+  margin-left: 10%;
+  width: 90%;
+}
+
+
+.th-to-left {
+  text-align: left;
+}
+
+.td-to-center {
+  padding-left: 22px;
+}
+
+.documentLanguage {
+  margin-top: 8%;
+  color: #6d758f;
+
+}
+
+.select-button {
+  width: 160px;
+  height: 60px;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align:center;
+}
+.select-button::after {
+  content: "";
+  background-image: url() no-repeat;
+}
+.select-button-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none;
+  cursor: pointer;
+}
+.block-to-center {
+  margin-left: 10%;
 }

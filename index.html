@@ -78,24 +78,40 @@
               <label for="file" class="uploadFile"><span class="upload"></span><span class="inputFileText"><b>Upload your files</b></span></input></label>
               <table class="wideTable">
                 <tr>
-                  <th>FILE NAME</th>
-                  <th>FILE SIZE</th>
-                  <th>NUMBER OF WORDS</th>
-                  <th>REMOVE</th>
+                  <th class="th-to-left">FILE NAME</th>
+                  <th class="th-to-left">FILE SIZE</th>
+                  <th class="th-to-left">NUMBER OF WORDS</th>
+                  <th class="th-to-left">REMOVE</th>
                 </tr>
                 <tr>
-                  <td>buisness_operations.docx</td>
+                  <td class="image-doc">buisness_operations.docx</td>
                   <td>78 kB</td>
                   <td>3894 words</td>
-                  <td><span class="deleteFile"></span></td>
+                  <td class="td-to-center"><img src="./img/waste-bin.svg" class="deleteFile"></img></td>
                 </tr>
                 <tr>
                   <td>buisness_financial.docx</td>
                   <td>23 kB</td>
                   <td>2123 words</td>
-                  <td><img class="deleteFile"></img></td>
+                  <td class="td-to-center"><img src="./img/waste-bin.svg" class="deleteFile"></img></td>
                 </tr>
               </table>
+            </section>
+            <section class="documentLanguage">
+              <div class="allTextDocumentUpload">
+                <span class="numberSection"><b>2</b></span>
+                <h2 class="uploadText">Choose your languages pairings</h2>
+              </div>
+              <div class="block-to-center">
+              <div class="select-button">
+              <select name="language" class="select-button-inner" required>
+                  <option value="english" selected>English</option>
+                  <option value="Arabian">Arabian</option>
+                  <option value="Kudrish">Kudrish</option>
+                  <option value="Ukrainian">Ukrainian</option>
+              </select>
+              </div>
+            </div>
             </section>
           </form>
         </div>
