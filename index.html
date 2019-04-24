@@ -74,8 +74,7 @@
               <h2 class="uploadText">Upload your documents</h2>
               <h5 class="smallUploadText">(Doc, Docx, Text, PDF, Markdown)</h5>
             </div>
-              <input type="file" id="file" name="file" value="files" class="inputHideFile"  >
-              <label for="file" class="uploadFile"><span class="upload"></span><span class="inputFileText"><b>Upload your files</b></span></input></label>
+              <label tabindex="0" for="file" class="uploadFile"><input type="file" id="file" name="file" value="files" class="inputHideFile"  ><span class="upload"></span><span class="inputFileText"><b>Upload your files</b></span></label>
               <table class="wideTable">
                 <tr>
                   <th class="th-to-left">FILE NAME</th>
@@ -87,13 +86,13 @@
                   <td class="image-doc">buisness_operations.docx</td>
                   <td>78 kB</td>
                   <td>3894 words</td>
-                  <td class="td-to-center"><img src="./img/waste-bin.svg" class="deleteFile"></img></td>
+                  <td class="td-to-center"><img tabindex="0" src="./img/waste-bin.svg" class="deleteFile"></img></td>
                 </tr>
                 <tr>
                   <td>buisness_financial.docx</td>
                   <td>23 kB</td>
                   <td>2123 words</td>
-                  <td class="td-to-center"><img src="./img/waste-bin.svg" class="deleteFile"></img></td>
+                  <td class="td-to-center"><img tabindex="0" src="./img/waste-bin.svg" class="deleteFile"></img></td>
                 </tr>
               </table>
             </section>
@@ -103,7 +102,7 @@
                 <h2 class="uploadText">Choose your languages pairings</h2>
               </div>
               <div class="block-to-center">
-              <div class="select-button">
+              <div class="select-button select-button-from">
               <select name="language" class="select-button-inner" required>
                   <option value="english" selected>English</option>
                   <option value="Arabian">Arabian</option>
@@ -112,6 +111,64 @@
               </select>
               </div>
             </div>
+            <div class="block-to-center">
+                <div class="select-button select-button-to">
+                <select name="language" class="select-button-inner" required>
+                    <option value="english" >English</option>
+                    <option value="Arabian" selected>Arabian</option>
+                    <option value="Kudrish">Kudrish</option>
+                    <option value="Ukrainian">Ukrainian</option>
+                </select>
+                </div>
+                <div class="select-button select-button-next">
+                    <select name="language" class="select-button-inner" required>
+                        <option value="english" >English</option>
+                        <option value="Arabian" >Arabian</option>
+                        <option value="Kudrish">Kudrish</option>
+                        <option value="Ukrainian" selected>Ukrainian</option>
+                    </select>
+                </div>
+                <img tabindex="0" src="./img/waste-bin.svg" class="deleteFile select-delete"></img>
+                <button type="button" class="add-button">
+                 Add
+                </button>
+              </div>
+            </section>
+            <section class="toneSelect">
+                <div class="allTextDocumentUpload">
+                    <span class="numberSection"><b>3</b></span>
+                    <h2 class="uploadText">Select your desired tone</h2>
+                    <span class="numberSection second-elem-numb"><b>4</b></span>
+                    <h2 class="uploadText second-elem">Tell us how urgent this job is</h2>
+                  </div>
+                  <div class="tone-time-container">
+                  <div class="tone">
+                  <label for="friendly">
+                    <input type="radio" name="tone" id="friendly" class="input">
+                    <div class="select-tone tone-before chat"><span class="checkedTone"></span>Friendly / Casual</div>
+                  </label>
+                  <label for="corporate">
+                    <input type="radio" name="tone" id="corporate" class="input" checked>
+                    <div class="select-tone tone-before suitcase"><span class="checkedTone"></span>Corporate / Pro</div>
+                  </label>
+                  <label for="media">
+                    <input type="radio" name="tone" id="media" class="input">
+                    <div class="select-tone tone-before media"> <span class="checkedTone"></span>Media / Formal</div>
+                  </label>
+                </div>
+                <div class="time-range">
+                  <input type="range" class="time-range-button" min="0" max="100" step="1" value="50">
+                  <div class="range-text">
+                      <h5 class="range-under">I GOT TIME</h5>
+                      <h5 class="range-under">AVERAGE</h5>
+                      <h5 class="range-under">YESTERDAY</h5>
+                    </div>
+                    <div class="range-info">
+                      <h4 class="info-header">TIMELINE INFO</h4>
+                      <p class="range-para">With an <span class="to-orange">AVERAGE</span> timeline set up, our expert translator can take a reasonable amount of time perfecting your translation</p>
+                    </div>
+                </div>
+              </div>
             </section>
           </form>
         </div>
