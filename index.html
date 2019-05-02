@@ -310,37 +310,112 @@
                   </div>
               </div>
               <div class="payment-method-choose">
-                  <div >
-                    <label for="friendly">
-                      <input type="radio" name="tone" id="friendly" class="input" />
-                      <div class="select-tone tone-before chat">
-                        <span class="checkedTone"></span>Friendly / Casual
+                  <div class="payholder">
+                    <label for="card">
+                      <input type="radio" name="paymethod" id="card" class="input" />
+                      <div class="select-pay pay-before pay">
+                        <span class="checkedPay"></span><img src="./img/visa.svg" alt="" class="img-card"><img src="./img/mastercard.svg" alt="" class="img-card">
                       </div>
                     </label>
-                    <label for="corporate">
+                    <label for="paypal">
                       <input
                         type="radio"
-                        name="tone"
-                        id="corporate"
+                        name="paymethod"
+                        id="paypal"
                         class="input"
                         checked
                       />
-                      <div class="select-tone tone-before suitcase">
-                        <span class="checkedTone"></span>Corporate / Pro
+                      <div class="select-pay pay-before pay">
+                        <span class="checkedPay"></span><img src="./img/paypal.svg" alt="" class="img-pay">
                       </div>
                     </label>
-                    <label for="media">
-                      <input type="radio" name="tone" id="media" class="input" />
-                      <div class="select-tone tone-before media">
-                        <span class="checkedTone"></span>Media / Formal
+                    <label for="amazon">
+                      <input type="radio" name="paymethod" id="amazon" class="input" />
+                      <div class="select-pay pay-before pay">
+                        <span class="checkedPay"></span><img src="./img/amazon.svg" alt="" class="img-pay">
                       </div>
                     </label>
                   </div>
                 </div>
+                    <div class="field-text">
+                      <div class="field-container field-card">
+                        <h5 class="above-text">CARD NUMBER</h5>
+                        <input
+                          type="text"
+                          inputmode="numeric"
+                          id="card"
+                          class="text text-card"
+                          name="card"
+                          pattern="\d*"
+                          title="CREDIT CARD"
+                          minlength="16"
+                          maxlength="16"
+                          required
+                        /><span class="cc-number-img"></span>
+                        </div>
+                        <div class="field-container field-date">
+                        <h5 class="above-text">EXPIRY DATE</h5>
+                        <input
+                          type="text"
+                          inputmode="numeric"
+                          id="card"
+                          placeholder="MM/YY"
+                          class="text text-card"
+                          name="card"
+                          pattern="\d*"
+                          title="CREDIT CARD"
+                          minlength="4"
+                          maxlength="4"
+                          required
+                        />
+                        </div>
+                        <div class="field-container field-code">
+                            <h5 class="above-text">CODE</h5>
+                            <input
+                            type="text"
+                            inputmode="numeric"
+                            id="card"
+                            class="text text-card"
+                            name="card"
+                            pattern="\d*"
+                            title="CREDIT CARD"
+                            minlength="3"
+                            maxlength="3"
+                            required
+                          />
+                            </div>
+                    </div>
+            </div>
+          </section>
+          <section class="submit">
+            <div class="block-to-center submit-field">
+              <input type="checkbox">
+              <div><h5 class="smallUploadText submit-text">I agree to the. <a href="#" class="underlined-a"> Terms & Conditions</a>
+                </h5></div>
+              <button class="upperMenuButton order">PLACE ORDER</button><button class="upperMenuButton">PRINT A QUOTE</button>
             </div>
           </section>
         </form>
       </div>
     </main>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-text-container">
+          <h4 class="info-header">WHAT WE DO</h4>
+          <p class="range-para">
+              We provide a full range of language services including content development, document, website and social media accounts translations.
+          </p></div>
+        <div class="footer-text-container"><h4 class="info-header">OUR MAIN OFFICE</h4>
+          <p class="range-para">Dubai, UAE</p>
+          <p class="range-para">P.O.Box: 502735</p>
+          <p class="range-para">Phone: <a href="#" class="phone">+971 (0) 44278128</a></p>
+        </div>
+        <div class="footer-text-container"><h4 class="info-header">CONNECT WITH US</h4>
+          <a href="#"><p class="range-para facebook">Facebook</p></a>
+          <a href="#"><p class="range-para twitter">Twitter</p></a>
+          <a href="#"><p class="range-para linkedin">LinkedIn</p></a></div>
+        <img src="./img/logo-footer.png" alt="" class="footer-img">
+      </div>
+    </footer>
   </body>
 </html>

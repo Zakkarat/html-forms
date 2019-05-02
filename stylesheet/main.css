@@ -62,7 +62,7 @@ form {
 
 .adjust {
   width: 100%;
-  height: 2500px;
+  height: 2200px;
   display: flex;
   justify-content: space-around;
 }
@@ -581,7 +581,7 @@ form {
 }
 .range-para {
   font-size: 12px;
-margin: 0 13%;
+  margin: 0 13%;
 }
 
 .payment-method {
@@ -667,13 +667,19 @@ margin: 0 13%;
 /*             COPIED            */
 .payment-method-choose {
   display: flex;
+  margin-bottom: 5%;
 }
 .tone {
   margin-left: 5%;
 }
-.select-tone {
-  width: 230px;
-  height: 60px;
+.payholder {
+  display: flex;
+  width: 77%;
+  justify-content: space-between;
+}
+.pay {
+  width: 200px;
+  height: 80px;
   border: 2px solid #c9d0e1;
   background-color: white;
   box-sizing: border-box;
@@ -684,34 +690,145 @@ margin: 0 13%;
   cursor: pointer;
   margin-right: 10%;
 }
-.input:checked + .select-tone > .checkedTone {
+.input:checked + .select-pay > .checkedPay {
   content: "";
   display: inline;
   width: 40px;
   height: 40px;
   position: absolute;
   background: url("../img/checked.png") no-repeat;
-  margin: -25px 113px;
+  margin: -40px 100px;
   z-index: 10;
 }
-.input:checked + .select-tone {
+.input:checked + .select-pay {
   border: 4px solid #76a7e1;
 }
-.tone-before::before {
+.img-card {
+  width: 51px;
+  height: 51px;
+}
+.img-card:last-child {
+  margin-left: 3px;
+}
+.img-pay {
+  width: 102px;
+  height: 81px;
+}
+.text-card {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 90%;
+  height: 40px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #d9deea;
+  font-size: 15px;
+  outline: transparent;
+  background-color: transparent;
+  text-align: center;
+}
+.field-card {
+  width: 45%;
+}
+.field-date {
+  width: 20%;
+}
+.field-code {
+  width: 15%
+}
+.cc-number-img::after {
   content: "";
-  width: 25px;
+  display: inline-block;
+  width: 30px;
   height: 25px;
+  background: url("../img/cc-visa-brands.svg") no-repeat;
+  background-size: 30px;
+  opacity: 0.3;
   position: relative;
-  margin-right: 20px;
-  font-size: 20px;
-  cursor: pointer;
+  right: 37px;
+  bottom: -7px;
 }
-.media::before {
-  background-image: url("../img/megaphone.svg");
+.submit-field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 6%;
+  margin-top: 3%;
 }
-.chat::before {
-  background-image: url("../img/chat.svg");
+ .submit-text {
+  padding-top: 0;
+  margin: 0 10px;
 }
-.suitcase::before {
-  background-image: url("../img/suitcase.svg");
+.submit-field > .order {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+.footer {
+  width: 100%;
+  height: 250px;
+  margin-top: 125px;
+  background-color: #444A62;
+}
+.footer-wrapper {
+  padding-top: 3%;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: #A5ABC5;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-text-container {
+  width: 15%;
+}
+.footer-text-container > .info-header::before {
+  background: url("../img/heart.svg") no-repeat;
+  margin: -3px 0x 10px 0px;
+  margin-bottom: 0%;
+}
+.footer-text-container:nth-child(2) > .info-header::before {
+  background: url("../img/compass.svg") no-repeat;
+  margin: -3px 0px 10px 0px;
+  margin-bottom: 10%;
+}
+.footer-text-container:nth-child(3) > .info-header::before {
+  background: url("../img/share.svg") no-repeat;
+  margin: -3px 0px 10px 0px;
+  margin-bottom: 10%;
+}
+.footer-text-container > .range-para {
+  width: 120%;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 4px;
+}
+.footer-text-container > .info-header {
+  margin-left: -2%;
+  margin-bottom: 2.5%;
+
+}
+.phone:hover {
+  text-decoration: underline;
+}
+.facebook::before, .twitter::before, .linkedin::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 19px;
+  background-size: 30px;
+  position: relative;
+  bottom: -6px;
+  left: 7px;
+}
+.facebook, .twitter, .linkedin {
+  margin-top:0px;
+}
+.facebook::before {
+  background: url("../img/facebook-logo.png") no-repeat;
+}
+.twitter::before {
+  background: url("../img/twitter-logo.png") no-repeat;
+}
+.linkedin::before {
+  background: url("../img/linkedin-logo.png") no-repeat;
 }
