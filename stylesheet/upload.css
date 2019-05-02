@@ -44,7 +44,6 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: 0.4s;
   margin-left: 10%;
 }
 .inputFileText {
