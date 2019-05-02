@@ -275,7 +275,7 @@
                   class="text text-name"
                   name="Full Name"
                   placeholder="Mattew Alebard"
-                  title="Write your Name and Surname."
+                  title="Enter your name. Minimal length 3 characters."
                   minlength="3"
                   required
                 /><span class="validation-sign"></span>
@@ -292,107 +292,131 @@
                     name="email"
                     placeholder="example@domain.com"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                    title="name@domain.etc"
+                    title="Enter your email. Example: name@domain.com"
                     required
                   /><span class="validation-sign"></span>
-                  </div>
-                  <div class="field-container">
+                </div>
+                <div class="field-container">
                   <h5 class="above-text">CHOOSE PASSWORD</h5>
-                  <input type="password"
-                  id="password"
-                  class="text text-name"
-                  name="password"
-                  placeholder="Enter your password"
-                  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
-                  title="Minimum 8 characters, UPPERCASE, lowercase and Number"
-                  minlength="6"
-                  required><span class="validation-sign"></span>
-                  </div>
+                  <input
+                    type="password"
+                    id="password"
+                    class="text text-name"
+                    name="password"
+                    placeholder="Enter your password"
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
+                    title="Enter your password. Minimum 8 characters, UPPERCASE, lowercase and Number."
+                    minlength="6"
+                    required
+                  /><span class="validation-sign"></span>
+                </div>
               </div>
               <div class="payment-method-choose">
-                  <div class="payholder">
-                    <label for="card">
-                      <input type="radio" name="paymethod" id="card" class="input" />
-                      <div class="select-pay pay-before pay">
-                        <span class="checkedPay"></span><img src="./img/visa.svg" alt="" class="img-card"><img src="./img/mastercard.svg" alt="" class="img-card">
-                      </div>
-                    </label>
-                    <label for="paypal">
-                      <input
-                        type="radio"
-                        name="paymethod"
-                        id="paypal"
-                        class="input"
-                        checked
+                <div class="payholder">
+                  <label for="card">
+                    <input
+                      type="radio"
+                      name="paymethod"
+                      id="card"
+                      class="input"
+                    />
+                    <div class="select-pay pay-before pay">
+                      <span class="checkedPay"></span
+                      ><img src="./img/visa.svg" alt="" class="img-card" /><img
+                        src="./img/mastercard.svg"
+                        alt=""
+                        class="img-card"
                       />
-                      <div class="select-pay pay-before pay">
-                        <span class="checkedPay"></span><img src="./img/paypal.svg" alt="" class="img-pay">
-                      </div>
-                    </label>
-                    <label for="amazon">
-                      <input type="radio" name="paymethod" id="amazon" class="input" />
-                      <div class="select-pay pay-before pay">
-                        <span class="checkedPay"></span><img src="./img/amazon.svg" alt="" class="img-pay">
-                      </div>
-                    </label>
-                  </div>
-                </div>
-                    <div class="field-text">
-                      <div class="field-container field-card">
-                        <h5 class="above-text">CARD NUMBER</h5>
-                        <input
-                          type="text"
-                          inputmode="numeric"
-                          id="card"
-                          class="text text-card"
-                          name="card"
-                          pattern="\d*"
-                          title="CREDIT CARD"
-                          minlength="16"
-                          maxlength="16"
-                          required
-                        /><span class="cc-number-img"></span>
-                        </div>
-                        <div class="field-container field-date">
-                        <h5 class="above-text">EXPIRY DATE</h5>
-                        <input
-                          type="text"
-                          inputmode="numeric"
-                          id="card"
-                          placeholder="MM/YY"
-                          class="text text-card"
-                          name="card"
-                          pattern="\d*"
-                          title="CREDIT CARD"
-                          minlength="4"
-                          maxlength="4"
-                          required
-                        />
-                        </div>
-                        <div class="field-container field-code">
-                            <h5 class="above-text">CODE</h5>
-                            <input
-                            type="text"
-                            inputmode="numeric"
-                            id="card"
-                            class="text text-card"
-                            name="card"
-                            pattern="\d*"
-                            title="CREDIT CARD"
-                            minlength="3"
-                            maxlength="3"
-                            required
-                          />
-                            </div>
                     </div>
+                  </label>
+                  <label for="paypal">
+                    <input
+                      type="radio"
+                      name="paymethod"
+                      id="paypal"
+                      class="input"
+                      checked
+                    />
+                    <div class="select-pay pay-before pay">
+                      <span class="checkedPay"></span
+                      ><img src="./img/paypal.svg" alt="" class="img-pay" />
+                    </div>
+                  </label>
+                  <label for="amazon">
+                    <input
+                      type="radio"
+                      name="paymethod"
+                      id="amazon"
+                      class="input"
+                    />
+                    <div class="select-pay pay-before pay">
+                      <span class="checkedPay"></span
+                      ><img src="./img/amazon.svg" alt="" class="img-pay" />
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="field-text">
+                <div class="field-container field-card">
+                  <h5 class="above-text">CARD NUMBER</h5>
+                  <input
+                    type="text"
+                    inputmode="numeric"
+                    id="card"
+                    class="text text-card"
+                    name="card"
+                    pattern="\d*"
+                    title="Enter your credit card number. Example: 1234 5678 9012 4567"
+                    minlength="16"
+                    maxlength="16"
+                    required
+                  /><span class="cc-number-img"></span>
+                </div>
+                <div class="field-container field-date">
+                  <h5 class="above-text">EXPIRY DATE</h5>
+                  <input
+                    type="text"
+                    inputmode="numeric"
+                    id="card"
+                    placeholder="MM/YY"
+                    class="text text-card"
+                    name="card"
+                    pattern="\d*"
+                    title="Example: 12/22"
+                    minlength="4"
+                    maxlength="4"
+                    required
+                  />
+                </div>
+                <div class="field-container field-code">
+                  <h5 class="above-text">CODE</h5>
+                  <input
+                    type="text"
+                    inputmode="numeric"
+                    id="card"
+                    class="text text-card"
+                    name="card"
+                    pattern="\d*"
+                    title="Example: 235"
+                    minlength="3"
+                    maxlength="3"
+                    required
+                  />
+                </div>
+              </div>
             </div>
           </section>
           <section class="submit">
             <div class="block-to-center submit-field">
-              <input type="checkbox">
-              <div><h5 class="smallUploadText submit-text">I agree to the. <a href="#" class="underlined-a"> Terms & Conditions</a>
-                </h5></div>
-              <button class="upperMenuButton order">PLACE ORDER</button><button class="upperMenuButton">PRINT A QUOTE</button>
+              <input type="checkbox" />
+              <div>
+                <h5 class="smallUploadText submit-text">
+                  I agree to the.
+                  <a href="#" class="underlined-a"> Terms & Conditions</a>
+                </h5>
+              </div>
+              <button class="upperMenuButton order">PLACE ORDER</button
+              ><button class="upperMenuButton">PRINT A QUOTE</button>
             </div>
           </section>
         </form>
@@ -403,18 +427,26 @@
         <div class="footer-text-container">
           <h4 class="info-header">WHAT WE DO</h4>
           <p class="range-para">
-              We provide a full range of language services including content development, document, website and social media accounts translations.
-          </p></div>
-        <div class="footer-text-container"><h4 class="info-header">OUR MAIN OFFICE</h4>
+            We provide a full range of language services including content
+            development, document, website and social media accounts
+            translations.
+          </p>
+        </div>
+        <div class="footer-text-container">
+          <h4 class="info-header">OUR MAIN OFFICE</h4>
           <p class="range-para">Dubai, UAE</p>
           <p class="range-para">P.O.Box: 502735</p>
-          <p class="range-para">Phone: <a href="#" class="phone">+971 (0) 44278128</a></p>
+          <p class="range-para">
+            Phone: <a href="#" class="phone">+971 (0) 44278128</a>
+          </p>
         </div>
-        <div class="footer-text-container"><h4 class="info-header">CONNECT WITH US</h4>
+        <div class="footer-text-container">
+          <h4 class="info-header">CONNECT WITH US</h4>
           <a href="#"><p class="range-para facebook">Facebook</p></a>
           <a href="#"><p class="range-para twitter">Twitter</p></a>
-          <a href="#"><p class="range-para linkedin">LinkedIn</p></a></div>
-        <img src="./img/logo-footer.png" alt="" class="footer-img">
+          <a href="#"><p class="range-para linkedin">LinkedIn</p></a>
+        </div>
+        <img src="./img/logo-footer.png" alt="" class="footer-img" />
       </div>
     </footer>
   </body>
